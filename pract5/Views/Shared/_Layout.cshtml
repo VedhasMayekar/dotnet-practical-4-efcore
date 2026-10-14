@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - pract5</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; color: #222; background: #f4f6f8; }
+        main { max-width: 900px; margin: 32px auto; padding: 24px; background: white; }
+        nav, footer { background: #202b3c; color: white; padding: 16px 24px; }
+        nav a { color: white; text-decoration: none; margin-right: 18px; }
+        h2 { margin-top: 0; }
+        table { border-collapse: collapse; width: 100%; max-width: 620px; }
+        td { border: 1px solid #ddd; padding: 12px; }
+        td:first-child { font-weight: bold; width: 130px; background: #f5f5f5; }
+    </style>
+</head>
+<body>
+    <partial name="_navbar" />
+    <main>
+        @RenderBody()
+    </main>
+    <partial name="_footer" />
+</body>
+</html>
